@@ -1,0 +1,90 @@
+{
+  "Germany": {
+    "nativeName": "Deutschland",
+    "population": 83240525,
+    "region": "Europe",
+    "subRegion": "Western Europe",
+    "capital": "Berlin",
+    "topLevelDomain": ".de",
+    "currencies": "Euro",
+    "languages": "German",
+    "img": "Bandeira da Alemanha – Wikipédia, a enciclopédia livre.jpg"
+  },
+  "United States of America": {
+    "nativeName": "United States",
+    "population": 329484123,
+    "region": "Americas",
+    "subRegion": "North America",
+    "capital": "Washington, D.C.",
+    "topLevelDomain": ".us",
+    "currencies": "United States dollar",
+    "languages": "English",
+    "img": "United States of America Large Flag.jpg"
+  },
+  "Brazil": {
+    "nativeName": "Brasil",
+    "population": 212559417,
+    "region": "Americas",
+    "subRegion": "South America",
+    "capital": "Brasília",
+    "topLevelDomain": ".br",
+    "currencies": "Brazilian real",
+    "languages": "Portuguese",
+    "img": "Brazil Flag.jpg"
+  },
+  "Iceland": {
+    "nativeName": "Ísland",
+    "population": 366425,
+    "region": "Europe",
+    "subRegion": "Northern Europe",
+    "capital": "Reykjavík",
+    "topLevelDomain": ".is",
+    "currencies": "Icelandic króna",
+    "languages": "Icelandic",
+    "img": "Iceland Flag metal Sign, Iceland sign, vintage sign_ Retro wall sign,.jpg"
+  },
+  "Afghanistan": {
+    "nativeName": "افغانستان",
+    "population": 40218234,
+    "region": "Asia",
+    "subRegion": "Southern Asia",
+    "capital": "Kabul",
+    "topLevelDomain": ".af",
+    "currencies": "Afghan afghani",
+    "languages": "Pashto, Dari",
+    "img": "When Amir travels back to Afganistán, there is a struggle with his identity because the people who stayed question if Amir is a true Afghan or not because he has always been sheltered and never truly saw all the disparity_.jpg"
+  },
+  "Åland Islands": {
+    "nativeName": "Åland",
+    "population": 28875,
+    "region": "Europe",
+    "subRegion": "Northern Europe",
+    "capital": "Mariehamn",
+    "topLevelDomain": ".ax",
+    "currencies": "Euro",
+    "languages": "Swedish",
+    "img": "Flag of Aland Islands.jpg"
+  },
+  "Albania": {
+    "nativeName": "Shqipëria",
+    "population": 2837743,
+    "region": "Europe",
+    "subRegion": "Southern Europe",
+    "capital": "Tirana",
+    "topLevelDomain": ".al",
+    "currencies": "Albanian lek",
+    "languages": "Albanian",
+    "img": "Albania - Wikipedia.jpg"
+  },
+  "Algeria": {
+    "nativeName": "الجزائر",
+    "population": 44700000,
+    "region": "Africa",
+    "subRegion": "Northern Africa",
+    "capital": "Algiers",
+    "topLevelDomain": ".dz",
+    "currencies": "Algerian dinar",
+    "languages": "Arabic, Berber",
+    "img": "Flag Of Algeria | Isolated Traveller.jpg"
+  }
+}

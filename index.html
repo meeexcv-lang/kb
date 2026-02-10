@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        height: 1000px;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px rgba(128, 128, 128, 0.313) solid;
+        align-items: center;
+        height: 60px;
+      }
+      .search {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        width: 250px;
+        height: 40px;
+        align-items: center;
+        padding-left: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.313);
+      }
+      .main {
+        background-color: rgb(246, 244, 244);
+        height: 1000px;
+      }
+      .filter {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        width: 160px;
+        height: 40px;
+        align-items: center;
+        padding-left: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.313);
+      }
+      .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+      }
+      .countries {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        transform: translateX(40px);
+      }
+      .countries-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        transform: translateX(40px);
+      }
+      .countries-2 img {
+        width: 310px;
+        height: 200px;
+      }
+      .countries img {
+        width: 310px;
+        height: 200px;
+      }
+      .box-1 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 23px;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(20px);
+        gap: 15px;
+      }
+      .box-2 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .box-3 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .box-4 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .box-5 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .box-6 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .box-7 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .box-8 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 15px;
+        box-shadow: 0px 0px 5px 0px rgba(48, 48, 48, 0.313);
+        height: 370px;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      @media screen and (max-width: 450px) {
+        .countries,
+        .countries-2 {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          transform: translateX(0px);
+        }
+
+        .countries img,
+        .countries-2 img {
+          width: 90%;
+          height: auto;
+          gap: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+            transform: translateX(50px);
+          "
+        >
+          Where in the world?
+        </h1>
+        <p style="margin: 0; padding: 0; transform: translateX(-50px)">
+          Dark Mobile
+        </p>
+      </header>
+      <div class="main">
+        <div class="main-header">
+          <div class="search">
+            <img
+              style="width: 20px; height: 20px"
+              src="Search_Line_Icon_PNG_and_SVG_Vector_Free_Download-removebg-preview.png"
+              alt=""
+            />
+            <input
+              style="margin: 0; padding: 0; border: none"
+              placeholder="Seach for a country..."
+              class="input"
+            />
+          </div>
+          <div class="filter">
+            <p>Filter by region&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></p>
+          </div>
+        </div>
+        <div class="main">
+          <div class="countries">
+            <div class="box-1">
+              <img
+                src="Bandeira da Alemanha – Wikipédia, a enciclopédia livre.jpg"
+                alt=""
+              />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">Germany</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">1,770,000</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">Europe</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Berlin</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-2">
+              <img src="United States of America Large Flag.jpg" alt="" />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">United States of America</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">323,947,000</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">America</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Washington OC</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-3">
+              <img src="Brazil Flag.jpg" alt="" />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">Brazil</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">265,165,000</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">America</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Brazilia</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-4">
+              <img
+                src="Iceland Flag metal Sign, Iceland sign, vintage sign_ Retro wall sign,.jpg"
+                alt=""
+              />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">Iceland</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">334,000</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">Europe</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Reykjavik</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-2">
+            <div class="box-5">
+              <img
+                src="When Amir travels back to Afganistán, there is a struggle with his identity because the people who stayed question if Amir is a true Afghan or not because he has always been sheltered and never truly saw all the disparity_.jpg"
+              />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">Afganistan</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">27,457,000</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">Asia</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Kabul</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-6">
+              <img src="Flag of Aland Islands.jpg" />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">Aland Islands</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">28,875</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">Europe</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Mariehamn</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-7">
+              <img src="Albania - Wikipedia.jpg" />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">Albania</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">2,000,026</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">Europe</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Teana</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-8">
+              <img src="Flag Of Algeria | Isolated Traveller.jpg" />
+              <div class="text">
+                <h1 style="margin: 0; padding: 0%">Albania</h1>
+                <div class="info">
+                  <p style="margin: 0; padding: 0%">
+                    Population: <span style="color: grey">40,400,000</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Region: <span style="color: grey">Africa</span>
+                  </p>
+                  <p style="margin: 0; padding: 0%">
+                    Capital: <span style="color: grey">Algeria</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pages"></div>
+    <script>
+      const URL = "./data.json";
+      async function addCountry() {
+        const promise = await fetch(URL);
+        const data = await promise.json();
+        let container = document.querySelector(".container");
+        let input = document.querySelector(".input");
+        input.addEventListener("keydown", function (event) {
+          if (
+            event.key === "Enter" &&
+            (input.value === "Afghanistan" ||
+              input.value === "Algeria" ||
+              input.value === "Albania" ||
+              input.value === "United States of America" ||
+              input.value === "Germany" ||
+              input.value === "Brazil" ||
+              input.value === "Iceland" ||
+              input.value === "Aland Islands")
+          ) {
+            event.preventDefault();
+            if (input.value === "Afghanistan") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["Afghanistan"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["Afghanistan"].name}</h2>
+              <p>Native name: ${data["Afghanistan"].nativeName}</p>
+              <p>Population: ${data["Afghanistan"].population}</p>
+              <p>Region: ${data["Afghanistan"].region}</p>
+              <p>Sub Region: ${data["Afghanistan"].subRegion}</p>
+              <p>Capital: ${data["Afghanistan"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["Afghanistan"].topLevelDomain}</p>
+              <p>Currencies: ${data["Afghanistan"].currencies}</p>
+              <p>Languages: ${data["Afghanistan"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+            if (input.value === "Germany") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["Germany"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["Germany"].name}</h2>
+              <p>Native name: ${data["Germany"].nativeName}</p>
+              <p>Population: ${data["Germany"].population}</p>
+              <p>Region: ${data["Germany"].region}</p>
+              <p>Sub Region: ${data["Germany"].subRegion}</p>
+              <p>Capital: ${data["Germany"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["Germany"].topLevelDomain}</p>
+              <p>Currencies: ${data["Germany"].currencies}</p>
+              <p>Languages: ${data["Germany"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+            if (input.value === "United States of America") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["United States of America"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["United States of America"].name}</h2>
+              <p>Native name: ${data["United States of America"].nativeName}</p>
+              <p>Population: ${data["United States of America"].population}</p>
+              <p>Region: ${data["United States of America"].region}</p>
+              <p>Sub Region: ${data["United States of America"].subRegion}</p>
+              <p>Capital: ${data["United States of America"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["United States of America"].topLevelDomain}</p>
+              <p>Currencies: ${data["United States of America"].currencies}</p>
+              <p>Languages: ${data["United States of America"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+            if (input.value === "Brazil") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["Brazil"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["Brazil"].name}</h2>
+              <p>Native name: ${data["Brazil"].nativeName}</p>
+              <p>Population: ${data["Brazil"].population}</p>
+              <p>Region: ${data["Brazil"].region}</p>
+              <p>Sub Region: ${data["Brazil"].subRegion}</p>
+              <p>Capital: ${data["Brazil"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["Brazil"].topLevelDomain}</p>
+              <p>Currencies: ${data["Brazil"].currencies}</p>
+              <p>Languages: ${data["Brazil"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+            if (input.value === "Iceland") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["Iceland"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["Iceland"].name}</h2>
+              <p>Native name: ${data["Iceland"].nativeName}</p>
+              <p>Population: ${data["Iceland"].population}</p>
+              <p>Region: ${data["Iceland"].region}</p>
+              <p>Sub Region: ${data["Iceland"].subRegion}</p>
+              <p>Capital: ${data["Iceland"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["Iceland"].topLevelDomain}</p>
+              <p>Currencies: ${data["Iceland"].currencies}</p>
+              <p>Languages: ${data["Iceland"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+            if (input.value === "Aland Islands") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["Aland Islands"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["Aland Islands"].name}</h2>
+              <p>Native name: ${data["Aland Islands"].nativeName}</p>
+              <p>Population: ${data["Aland Islands"].population}</p>
+              <p>Region: ${data["Aland Islands"].region}</p>
+              <p>Sub Region: ${data["Aland Islands"].subRegion}</p>
+              <p>Capital: ${data["Aland Islands"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["Aland Islands"].topLevelDomain}</p>
+              <p>Currencies: ${data["Aland Islands"].currencies}</p>
+              <p>Languages: ${data["Aland Islands"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+            if (input.value === "Albania") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["Albania"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["Albania"].name}</h2>
+              <p>Native name: ${data["Albania"].nativeName}</p>
+              <p>Population: ${data["Albania"].population}</p>
+              <p>Region: ${data["Albania"].region}</p>
+              <p>Sub Region: ${data["Albania"].subRegion}</p>
+              <p>Capital: ${data["Albania"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["Albania"].topLevelDomain}</p>
+              <p>Currencies: ${data["Albania"].currencies}</p>
+              <p>Languages: ${data["Albania"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+            if (input.value === "Algeria") {
+              let box = document.createElement("div");
+              box.innerHTML = `
+             <div
+        class="pages"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          background-color: white;
+          padding: 170px;
+          padding-top: 60px;
+          padding-bottom: 500px;
+          position: absolute;
+          transform: translateY(-939px);
+        "
+      >
+        <button class='back'
+          style="
+            border: none;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+          "
+        >
+          Back
+        </button>
+        <div
+          class="pages"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <img style="width: 550px" src="${data["Algeria"].img}" alt="" />
+          <div
+            class="text"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              gap: 300px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+              "
+            >
+              <h2>Name: ${data["Algeria"].name}</h2>
+              <p>Native name: ${data["Algeria"].nativeName}</p>
+              <p>Population: ${data["Algeria"].population}</p>
+              <p>Region: ${data["Algeria"].region}</p>
+              <p>Sub Region: ${data["Algeria"].subRegion}</p>
+              <p>Capital: ${data["Algeria"].capital}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                transform: translateY(70px);
+              "
+            >
+              <p>Top Level Domain: ${data["Algeria"].topLevelDomain}</p>
+              <p>Currencies: ${data["Algeria"].currencies}</p>
+              <p>Languages: ${data["Algeria"].languages}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            `;
+              container.appendChild(box);
+
+              const backBtn = document.querySelector(".back");
+              backBtn.addEventListener("click", function () {
+                box.remove();
+              });
+            }
+          }
+        });
+      }
+      addCountry();
+    </script>
+  </body>
+</html>
