@@ -300,7 +300,7 @@
                   <p style="margin: 0; padding: 0%">
                     Population: <span style="color: grey">27,457,000</span>
                   </p>
-                  <p style="margin: 0; padding: 0%">
+                  <p class="region" style="margin: 0; padding: 0%">
                     Region: <span style="color: grey">Asia</span>
                   </p>
                   <p style="margin: 0; padding: 0%">
@@ -384,7 +384,7 @@
               input.value === "Iceland" ||
               input.value === "Aland Islands")
           ) {
-            event.preventDefault();
+            // event.preventDefault();
             if (input.value === "Afghanistan") {
               let box = document.createElement("div");
               box.innerHTML = `
@@ -478,7 +478,7 @@
             if (input.value === "Germany") {
               let box = document.createElement("div");
               box.innerHTML = `
-             <div
+             <div 
         class="pages"
         style="
           display: flex;
